@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista wszystkich produktów</h1>
+
+    <% @products.each do |product| %>
+      <ul style="list-style-type:disc">
+        <li><%= product.name %></li>
+      </ul>
+    <% end %>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>
+
+
